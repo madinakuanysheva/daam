@@ -1,6 +1,5 @@
-from flask import Flask, request, jsonify, session
+from flask import Blueprint, request, jsonify, session, redirect, url_for
 import sqlite3
-from flask import Blueprint
 
 login = Blueprint('login', __name__)
 
@@ -20,6 +19,6 @@ def login_user():
 
     if user:
         session['user_id'] = user[0]
-        return jsonify({'message': 'You have successfully logged in!'}), 200
+        return redirect(url_for('main'))  # Перенаправление на главную страницу
     else:
         return jsonify({'error': 'Invalid email or password'}), 401

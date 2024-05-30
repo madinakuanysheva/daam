@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 50px 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #000;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #000;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+        }
+        .mission {
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+        .main-users {
+            margin-bottom: 30px;
+        }
+        .main-users img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">About Us</h1>
+        <div class="mission">
+            <h2>Mission</h2>
+            <p>To open up new opportunities for women by promoting them on STEAM with the help of an educational, gamification application with embedded AI.</p>
+        </div>
+        <div class="main-users">
+            <h2>Main Users</h2>
+            <p>Our solution aims to meet the needs and ambitions of women who want to succeed in STEM fields of age from 10 to 23. This social stratum faces challenges related to access to education, career development, and professional integration. We offer learning opportunities, fostering technical skills and helping to broaden horizons in STEM fields to women and girls who are interested in internships or pursuing a STEM career.</p>
+            <p>We offer a range of services and resources aimed at promoting women in the field of STEM (coding, robotics). We provide access to training material, in the form of AI, practical tasks to test the knowledge gained, the opportunity to receive support and accordingly pave the way for employment in the STEM field.</p>
+            <img src="{{ url_for('static', filename='img/photo1713982873.jpeg') }}" alt="STEMess">
+        </div>
+    </div>
+</body>
+</html>

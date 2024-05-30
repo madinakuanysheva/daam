@@ -7,4 +7,4 @@ logout = Blueprint('logout', __name__)
 @logout.route('/logout')
 def logout_user():
     session.pop('user_id', None)
-    return 'Вы успешно вышли из системы!'
+    return ' You have sucessfully logout!'

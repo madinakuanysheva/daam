@@ -1,0 +1,5 @@
+.idea/
+__pycache__/
+daam.db
+venv/
+your_database.db

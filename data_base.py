@@ -73,7 +73,6 @@ cursor.execute('''
         social_problem_id INTEGER,
         level_id INTEGER,
         task_description TEXT,
-        expectation TEXT,
         FOREIGN KEY (social_problem_id) REFERENCES social_problems(social_problem_id),
         FOREIGN KEY (level_id) REFERENCES levels (level_id)
     )
@@ -81,15 +80,15 @@ cursor.execute('''
 
 cursor.execute('''
     INSERT INTO tasks (social_problem_id, level_id, task_description) VALUES
-        (1, 1, 'условия; циклы '),
-        (2, 1, 'Write a script to analyze socio-cultural changes in a specific region based on language and cultural practices.'),
-        (3, 1, 'Develop an application to display the dynamics of urbanization in different countries.'),
-        (4, 2, 'Implement a system for detecting and preventing corrupt practices in government institutions.'),
-        (5, 2, 'Create a program to optimize waste management processes and increase the efficiency of recycling.'),
-        (6, 2, 'Develop a web application to support victims of domestic violence and provide them with necessary assistance.'),
-        (7, 3, 'Build a monitoring and analysis system for infrastructure conditions in various regions of the world.'),
-        (8, 3, 'Design a highly efficient cybersecurity system to protect critical information infrastructure.'),
-        (9, 3, 'функции')
+        (1, 1, 'Linear programs'),
+        (2, 1, 'Conditions'),
+        (3, 1, 'Basic operations'),
+        (4, 2, 'Lists and Sets'),
+        (5, 2, 'Strings'),
+        (6, 2, 'Tuples and dictionaries'),
+        (7, 3, 'Functions'),
+        (8, 3, 'Stream input'),
+        (9, 3, 'Libraries')
 ''')
 
 cursor.execute('''
