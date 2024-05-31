@@ -2,7 +2,7 @@ import transformers
 import torch
 import json
 
-f = open("custom_insutrctions.txt", "r")
+f = open("custom_instructions.txt", "r")
 content = f.read()
 
 model_id = "meta-llama/Meta-Llama-3-70B-Instruct"
