@@ -33,6 +33,8 @@ def account_page():
     return render_template('personal_info_and_chat.html')
 
 
+
+
 app.register_blueprint(register)
 app.register_blueprint(login)
 app.register_blueprint(logout)
